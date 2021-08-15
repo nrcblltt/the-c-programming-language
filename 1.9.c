@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
   int c;
   int spc = 0;
   
@@ -16,5 +16,10 @@ main() {
       putchar(c);
     }
   }
+
+  return 0;
 }
+
+//forse era meglio tenere conto del carattere precedente
+//con una variabile int
     

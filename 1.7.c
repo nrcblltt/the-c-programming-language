@@ -1,5 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
   printf("EOF has value: %d\n",EOF);
+  return 0;
 }

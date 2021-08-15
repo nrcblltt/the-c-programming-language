@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
   int nc;
   char c;
 
@@ -19,4 +19,6 @@ main() {
   }
  
   printf("%d\n", nc);
+
+  return 0;
 }

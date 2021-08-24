@@ -1,18 +1,22 @@
 #include <stdio.h>
 
 int main() {
+  int in = 0;
   int c;
 
-  while ((c=getchar()) != EOF) {
-    if (c == ' ' || c == '\t') {
-      printf("\n");
-      c=getchar();
-      while ( c == ' ' || c == '\t') {
-	c=getchar();
+  while ((c = getchar()) != EOF) {
+    if (c == '\n' || c == '\t' || c == ' ') {
+      if (in) {
+	in = 0;
+	putchar('\n');
       }
-      putchar(c);
     } else {
+      if (!in) {
+	in = 1;
+	putchar(c);
+      } else {
       putchar(c);
+      }
     }
   }
 
